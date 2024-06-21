@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/PMP-Quiz-Prep.git
+   git clone https://github.com/mansouriyassine/PMP-Quiz-Prep.git
    cd PMP-Quiz-Prep
    ```
 
