@@ -6,6 +6,10 @@ const mongoose = require('mongoose');
 // Load environment variables
 dotenv.config();
 
+// Debug logging
+console.log('MONGODB_URI:', process.env.MONGODB_URI);
+console.log('PORT:', process.env.PORT);
+
 const app = express();
 
 // Middleware
