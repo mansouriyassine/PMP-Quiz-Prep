@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 // Load environment variables
 dotenv.config();
 
-// Debug logging
 console.log('MONGODB_URI:', process.env.MONGODB_URI);
 console.log('PORT:', process.env.PORT);
 
@@ -21,10 +20,19 @@ mongoose.set('strictQuery', false);
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}).then(() => {
+})
+.then(() => {
   console.log('Connected to MongoDB');
-}).catch((error) => {
+})
+.catch((error) => {
   console.error('MongoDB connection error:', error);
+  console.error('Error name:', error.name);
+  console.error('Error message:', error.message);
+  if (error.reason) {
+    console.error('Error reason:', error.reason);
+  }
+  // Log the full error object for debugging
+  console.error('Full error object:', JSON.stringify(error, null, 2));
 });
 
 // Routes
