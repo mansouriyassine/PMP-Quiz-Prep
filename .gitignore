@@ -1,0 +1,67 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore npm's debug log file
+npm-debug.log
+
+# Ignore Yarn's debug log file
+yarn-debug.log
+
+# Ignore Yarn error log
+yarn-error.log
+
+# Ignore .env files
+.env
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore build output
+/build/
+
+# Ignore dependencies
+/venv/
+/pipenv/
+/pipfile.lock
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore compiled Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore compiled Java bytecode
+*.class
+
+# Ignore compiled TypeScript files
+*.js
+*.js.map
+
+# Ignore compiled PHP files
+*.php
+
+# Ignore compiled Ruby files
+*.gem
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore database files
+*.sqlite
+*.sql
+
+# Ignore temporary files
+*.swp
+*.swo
