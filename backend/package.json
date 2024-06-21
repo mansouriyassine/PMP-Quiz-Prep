@@ -1,8 +1,8 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "PMP Quiz Prep Backend",
-  "main": "app/server.js",
+  "description": "Backend for PMP Quiz Prep",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },
@@ -11,17 +11,16 @@
     "dev": "nodemon app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "PMP",
-    "Quiz",
-    "Prep"
-  ],
-  "author": "Your Name",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.19.2",
-    "mongoose": "^5.13.22"
-  }
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
