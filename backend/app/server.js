@@ -12,15 +12,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-const mongoURI = process.env.MONGO_URI;
-mongoose.connect(mongoURI, {
+// MongoDB connection
+mongoose.set('strictQuery', false);
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true
 }).then(() => {
-  console.log('MongoDB connected');
-}).catch(err => {
-  console.log('MongoDB connection error:', err);
+  console.log('Connected to MongoDB');
+}).catch((error) => {
+  console.error('MongoDB connection error:', error);
 });
 
 // Routes
